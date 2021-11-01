@@ -1,0 +1,240 @@
+<div class="container">
+<div class="row">
+
+<img src="helplit_logo.png">
+
+<h1>Avaliação de Perfil Comportamental</h1>
+<p>Cada pessoa tem um perfil predominante que influencia seu comportamento. Baseado no teste DISC, faça o teste abaixo e descubra a metáfora (águia, gato, lobo ou tubarão) que ilustra como você tem a tendência de se comportar!</p>
+
+<br>
+<h2>Instruções:</h2>
+
+<p>
+Não tente "acertar” as respostas que parecem mais "adequadas” ou  "socialmente corretas” . Para não distorcer o resultado, procure ser bem verdadeiro e escolher a resposta mais adequada "para você”!
+</p>
+<form action="/resultado_perfil" method="POST" name="questionario">
+<br>
+<table class="u-full-width">
+<tbody>
+
+<tr>
+	<td colspan=2 align=left><p><b>Com qual dos seguintes elementos você mais se identifica?</b></p></td>
+</tr>
+<tr align=center valign=middle>
+	<td colspan="2" style="text-align: center;"><img src="elements.png"></td>
+</tr>
+
+<tr>
+	<td colspan=2 align=left><p><b>Selecione o seu elemento principal:</b></p></td>
+</tr>
+<tr align=center valign=middle><td><input type=radio name=rdElementoPrimario value=FOGO></td><td align=left><p>Fogo</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=rdElementoPrimario value=TERRA></td><td align=left><p>Terra</p></td></tr>
+<tr align=center valign=middle>
+	<td><input type=radio name=rdElementoPrimario value=AR></td>
+	<td align=left>
+		<p>Ar</p>
+	</td>
+</tr>
+<tr align=center valign=middle><td><input type=radio name=rdElementoPrimario value=ÁGUA></td><td align=left><p>Água</p></td></tr>
+
+<tr>
+	<td colspan=2 align=left><p><b>Selecione o seu elemento secundário:</b></p></td>
+</tr>
+<tr align=center valign=middle><td><input type=radio name=rdElementoSecundario value=FOGO></td><td align=left><p>Fogo</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=rdElementoSecundario value=TERRA></td><td align=left><p>Terra</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=rdElementoSecundario value=AR></td><td align=left><p>Ar</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=rdElementoSecundario value=ÁGUA></td><td align=left><p>Água</p></td></tr>
+
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>Qual a sua idade?</b></p></td></tr>
+<tr align=center valign=middle><td colspan="2"><input type="number" name=idade min="0" max="120" maxlength="2" size="2"></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>Qual área você atua?</b></p></td></tr>
+<tr align=center valign=middle><td colspan="2"><input type="text" name=area maxlength="50" size="50"></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>1. Eu sou...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r1_1 value=I></td><td align=left><p>Idealista, criativo e visionário</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r1_1 value=C></td><td align=left><p>Divertido, espiritual e benéfico</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r1_1 value=O></td><td align=left><p>Confiável, meticuloso e previsível</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r1_1 value=A></td><td align=left><p>Focado, determinado e persistente</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>2. Eu gosto de....</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r2_1 value=A></td><td align=left><p>Ser piloto</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r2_1 value=C></td><td align=left><p>Conversar com os passageiros</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r2_1 value=O></td><td align=left><p>Planejar a viagem</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r2_1 value=I></td><td align=left><p>Explorar novas rotas</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>3. Se você quiser se dar bem comigo...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r3_1 value=I></td><td align=left><p>Me dê liberdade</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r3_1 value=O></td><td align=left><p>Me deixe saber sua expectativa</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r3_1 value=A></td><td align=left><p>Lidere, siga ou saia do caminho</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r3_1 value=C></td><td align=left><p>Seja amigável, carinhoso e compreensivo</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>4. Para conseguir obter bons resultados é preciso...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r4_1 value=I></td><td align=left><p>Ter incertezas</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r4_1 value=O></td><td align=left><p>Controlar o essencial</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r4_1 value=C></td><td align=left><p>Diversão e cerebração</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r4_1 value=A></td><td align=left><p>Planejar e obter recursos</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>5. Eu me divirto quando...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r5_1 value=A></td><td align=left><p>Estou me exercitando</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r5_1 value=I></td><td align=left><p>Tenho novidades</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r5_1 value=C></td><td align=left><p>Estou com os outros</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r5_1 value=O></td><td align=left><p>Determino as regras</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>6. Eu penso que...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r6_1 value=C></td><td align=left><p>Unidos venceremos, divididos perderemos</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r6_1 value=A></td><td align=left><p>O ataque é melhor que a defesa</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r6_1 value=I></td><td align=left><p>É bom ser manso, mas andar com um porrete</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r6_1 value=O></td><td align=left><p>Um homem prevenido vale por dois</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>7. Minha preocupação é...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r7_1 value=I></td><td align=left><p>Gerar a ideia global</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r7_1 value=C></td><td align=left><p>Fazer com que as pessoas gostem</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r7_1 value=O></td><td align=left><p>Fazer com que funcione</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r7_1 value=A></td><td align=left><p>Fazer com que aconteça</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>8. Eu prefiro...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r8_1 value=I></td><td align=left><p>Perguntas a respostas</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r8_1 value=O></td><td align=left><p>Ter todos os detalhes</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r8_1 value=A></td><td align=left><p>Vantagens a meu favor</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r8_1 value=C></td><td align=left><p>Que todos tenham a chance de ser ouvido</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>9. Eu gosto de...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r9_1 value=A></td><td align=left><p>Fazer progresso</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r9_1 value=C></td><td align=left><p>Construir memórias</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r9_1 value=O></td><td align=left><p>Fazer sentido</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r9_1 value=I></td><td align=left><p>Tornar as pessoas confortáveis</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>10. Eu gosto de chegar...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r10_1 value=A></td><td align=left><p>Na frente</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r10_1 value=C></td><td align=left><p>Junto</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r10_1 value=O></td><td align=left><p>Na hora</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r10_1 value=I></td><td align=left><p>Em outro lugar</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>11. Um ótimo dia para mim é quando...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r11_1 value=A></td><td align=left><p>Consigo fazer muitas coisas</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r11_1 value=C></td><td align=left><p>Me divirto com meus amigos</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r11_1 value=O></td><td align=left><p>Tudo segue conforme planejado</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r11_1 value=I></td><td align=left><p>Desfruto de coisas novas e estimulantes</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>12. Eu vejo a morte como...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r12_1 value=I></td><td align=left><p>Uma grande aventura misteriosa</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r12_1 value=C></td><td align=left><p>Oportunidade para rever os falecidos</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r12_1 value=O></td><td align=left><p>Um modo de receber recompensas</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r12_1 value=A></td><td align=left><p>Algo que sempre chega muito cedo</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>13. Minha filosofia de vida é...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r13_1 value=A></td><td align=left><p>Há ganhadores e perdedores, e eu acredito ser um ganhador</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r13_1 value=C></td><td align=left><p>Para eu ganhar, ninguém precisa perder</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r13_1 value=O></td><td align=left><p>Para ganhar é preciso seguir as regras</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r13_1 value=I></td><td align=left><p>Para ganhar, é necessário inventar novas regras</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>14. Eu sempre gostei de...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r14_1 value=I></td><td align=left><p>Explorar</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r14_1 value=O></td><td align=left><p>Evitar surpresas</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r14_1 value=A></td><td align=left><p>Focalizar a meta</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r14_1 value=C></td><td align=left><p>Realizar uma abordagem natural</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>15. Eu gosto de mudanças se...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r15_1 value=A></td><td align=left><p>Me der uma vantagem competitiva</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r15_1 value=C></td><td align=left><p>For divertido e puder ser compartilhado</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r15_1 value=I></td><td align=left><p>Me der mais liberdade e variedade</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r15_1 value=O></td><td align=left><p>Melhorar ou me der mais controle</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>16. Não existe nada de errado em...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r16_1 value=A></td><td align=left><p>Se colocar na frente</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r16_1 value=C></td><td align=left><p>Colocar os outros na frente</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r16_1 value=I></td><td align=left><p>Mudar de ideia</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r16_1 value=O></td><td align=left><p>Ser consistente</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>17. Eu gosto de buscar conselhos de...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r17_1 value=A></td><td align=left><p>Pessoas bem-sucedidas</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r17_1 value=C></td><td align=left><p>Anciões e conselheiros</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r17_1 value=O></td><td align=left><p>Autoridades no assunto</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r17_1 value=I></td><td align=left><p>Lugares, os mais estranhos</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>18. Meu lema é...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r18_1 value=I></td><td align=left><p>Fazer o que precisa ser feito</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r18_1 value=O></td><td align=left><p>Fazer bem feito</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r18_1 value=A></td><td align=left><p>Fazer junto com o grupo</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r18_1 value=C></td><td align=left><p>Simplesmente fazer</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>19. Eu gosto de...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r19_1 value=I></td><td align=left><p>Complexidade, mesmo se confuso</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r19_1 value=O></td><td align=left><p>Ordem e sistematização</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r19_1 value=C></td><td align=left><p>Calor humano e animação</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r19_1 value=A></td><td align=left><p>Coisas claras e simples</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>20. Tempo para mim é...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r20_1 value=A></td><td align=left><p>Algo que detesto desperdiçar</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r20_1 value=C></td><td align=left><p>Um grande ciclo</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r20_1 value=O></td><td align=left><p>Uma flecha que leva ao inevitável</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r20_1 value=I></td><td align=left><p>Irrelevante</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>21. Se eu fosse bilionário...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r21_1 value=C></td><td align=left><p>Faria doações para muitas entidades</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r21_1 value=O></td><td align=left><p>Criaria uma poupança avantajada</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r21_1 value=I></td><td align=left><p>Faria o que desse na cabeça</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r21_1 value=A></td><td align=left><p>Exibiria bastante com algumas pessoas</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>22. Eu acredito que...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r22_1 value=A></td><td align=left><p>O destino é mais importante que a jornada</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r22_1 value=C></td><td align=left><p>A jornada é mais importante que o destino</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r22_1 value=O></td><td align=left><p>Um centavo economizado é um centavo ganho</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r22_1 value=I></td><td align=left><p>Bastam um navio e uma estrela para navegar</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>23. Eu acredito também que...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r23_1 value=A></td><td align=left><p>Aquele que hesita está perdido</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r23_1 value=O></td><td align=left><p>De grão em grão a galinha enche o papo</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r23_1 value=C></td><td align=left><p>O que vai, volta</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r23_1 value=I></td><td align=left><p>Um sorriso ou uma careta é o mesmo para quem é cego</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>24. Eu acredito ainda que...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r24_1 value=O></td><td align=left><p>É melhor prudência do que arrependimento</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r24_1 value=I></td><td align=left><p>A autoridade deve ser desafiada</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r24_1 value=A></td><td align=left><p>Ganhar é fundamental</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r24_1 value=C></td><td align=left><p>O coletivo é mais importante do que o individual</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+<tr><td colspan=2 align=left><p><b>25. Eu penso que...</b></p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r25_1 value=I></td><td align=left><p>Não é fácil ficar encurralado</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r25_1 value=O></td><td align=left><p>É preferível olhar, antes de pular</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r25_1 value=C></td><td align=left><p>Duas cabeças pensam melhor que do que uma</p></td></tr>
+<tr align=center valign=middle><td><input type=radio name=r25_1 value=A></td><td align=left><p>Se você não tem condições de competir, não compita</p></td></tr>
+<tr><td colspan=2><br></td></tr>
+
+</tbody>
+</table>
+<br>
+	<button type="button" onclick="validateForm();">Enviar Análise</button>
+</form>
+
+</div>
+</div>
