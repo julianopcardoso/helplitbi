@@ -1,4 +1,4 @@
-# Helplit BI
+# Helplit BI - Avaliação de Perfil Comportamental
 
 Projeto desenvolvido para disciplina de Projeto Integrador I/2021-02 do curso Análise e Desenvolvimento de Sistema da instituição UNILASALLE.
 
