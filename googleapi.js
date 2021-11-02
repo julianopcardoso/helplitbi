@@ -4,7 +4,7 @@ require('dotenv').config();
 async function insertValues(valueA, valueB, valueC, valueD, valueE, valueF, valueG, valueH, valueI, valueJ){
     
     const gcsKey = JSON.parse(
-        Buffer.from(process.env.GCP_CRED_FILE, 'base64').toString()
+        Buffer.from(process.env.GOOGLE_CREDENTIALS_FILE, 'base64').toString()
       );
      
     const auth = new google.auth.GoogleAuth({
