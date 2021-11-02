@@ -1,6 +1,6 @@
 # Helplit BI
 
-Projeto desenvolvimento para disciplina de Projeto Integrador I/2021-02 do curso Análise e Desenvolvimento de Sistema da instituição UNILASALLE.
+Projeto desenvolvido para disciplina de Projeto Integrador I/2021-02 do curso Análise e Desenvolvimento de Sistema da instituição UNILASALLE.
 
  - Questionário de Avaliação de Perfil Comportamental
 
